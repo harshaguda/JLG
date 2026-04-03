@@ -2,12 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
     push:
-        branches: [main, master]
+        branches: [master]
     workflow_dispatch:
-
-concurrency:
-    group: github-pages
-    cancel-in-progress: true
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
